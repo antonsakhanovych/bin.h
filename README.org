@@ -1,0 +1,16 @@
+* bin.h
+ Priority queue implementation
+
+** Get started
+Check out [[./bin.h][bin.h]] for methods available.
+
+#+begin_src c
+// use binheap_init() to initialize binary heap
+Binary_Heap *binh = binheap_init();
+
+// to free memory use
+binheap_deinit(binh);
+#+end_src
+
+** Other notes
+Since ~binheap_construct(int* arr, size_t size);~ doesn't allocate memory for the array. You should pass malloc'd array.
