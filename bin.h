@@ -12,7 +12,9 @@ typedef struct {
 
 Binary_Heap *binheap_init();
 
-Binary_Heap *binheap_construct(int *arr);
+void binheap_print(Binary_Heap *self);
+
+Binary_Heap *binheap_construct(int *arr, size_t size);
 
 void binheap_insert(Binary_Heap *self, int val);
 
@@ -21,5 +23,7 @@ int binheap_find_min(Binary_Heap *self);
 int binheap_del_min(Binary_Heap *self);
 
 Binary_Heap *binheap_merge(Binary_Heap *first, Binary_Heap *second);
+
+void binheap_deinit(Binary_Heap *self);
 
 #endif
