@@ -1,9 +1,7 @@
 #include "./bin.h"
 
-#include <stdbool.h>
 #include <stdio.h>
 #include <string.h>
-#include <sys/types.h>
 
 void _swap(int *a, int *b) {
   int temp = *a;
